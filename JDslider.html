@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<!--<link href="css/initialize.css" rel="stylesheet" type="text/css">-->
+		<!--<link href="css/index.css" rel="stylesheet" type="text/css">-->
+		<style>
+		
+			*{ margin:0; padding:0; }
+			a { color:#555; text-decoration:none; }
+			a:hover { text-decoration:none; }
+			ul li { list-style:none; }
+			.wrap {
+				width: 210px;
+				height: 465px;
+				background-color: #c81623;
+				margin: 20px 100px;
+				border-top: 1px solid #c81623;
+				border-bottom: 1px solid #c81623;
+			}
+			
+			.wrap ul li {
+				height: 31px;
+				line-height: 31px;
+				color: #fff;
+				padding-left: 10px;
+				border-left: 1px solid transparent;
+				position: relative;
+			}
+			
+			.wrap ul li:hover {
+				background-color: #fff;
+				color: #c81623;
+				border-left-color: #c81623;
+			}
+			
+			.wrap ul li a {
+				color: #fff;
+			}
+			
+			.wrap ul li:hover a {
+				color: #c81623;
+			}
+			
+			.wrap ul li span {
+				position: absolute;
+				right: 10px;
+			}
+			
+			.wrap ul li:hover span {
+				display: none;
+			}
+			
+			.wrap ul li .box {
+				width: 500px;
+				height: 465px;
+				border: 1px solid #c81623;
+				border-left: none;
+				position: absolute;
+				left: 209px;
+				top: -1px;
+				display: none;
+			}
+			
+		/*		.wrap ul li .box.box1 {
+				top: -32px;
+			}
+			
+		.wrap ul li .box.box2 {
+				top: -63px;
+			}
+			*/
+			.wrap ul li:hover .box {
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<ul id="wrapUl">
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box box1"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box box2"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+				<li><a href="#">手机</a>、<a href="#">数码</a>
+					<span>&gt;</span>
+					<div class="box"></div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			var wrapUl = document.getElementById("wrapUl");
+//			console.log(wrapUl);
+			var liDiv=wrapUl.getElementsByTagName("div");
+//			console.log(liDiv);
+			for (var i = 0; i < 15; i++) {
+				liDiv[i].style.top=(-31*i-1)+"px";
+			}
+		</script>
+	</body>
+
+</html>
